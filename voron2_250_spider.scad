@@ -5,13 +5,13 @@ use <libtray.scad>;
 
 module r(length, width, height) {
   rotate([90, 0, 0]) raceway(length=length,
-							 width=width,
-							 height=height,
-							 tongue_length=8,
-							 slot_length=4,
-							 keyhole_diameter=7,
-							 thickness=2,
-							 screw_slot_width=3);
+                             width=width,
+                             height=height,
+                             tongue_length=8,
+                             slot_length=4,
+                             keyhole_diameter=7,
+                             thickness=2,
+                             screw_slot_width=3);
 }
 
 module c(length, width) {
@@ -20,18 +20,18 @@ module c(length, width) {
 
 module t(length, width) {
   translate([length/2 - width/2, -length, 0])
-	tee_joint(width=width,
-			  length=length,
-			  hole_size=4.6,
-			  thickness=4);
+    tee_joint(width=width,
+              length=length,
+              hole_size=4.6,
+              thickness=4);
 }
 
 module l(length, width) {
   translate([0, -length, 0])
-	ell_joint(width=width,
-			  length=length,
-			  hole_size=4.6,
-			  thickness=4);
+    ell_joint(width=width,
+              length=length,
+              hole_size=4.6,
+              thickness=4);
 }
 
 module at(x, y) {
