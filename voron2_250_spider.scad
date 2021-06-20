@@ -1,3 +1,6 @@
+$fa=1;
+$fs=0.4;
+
 use <libtray.scad>;
 
 module r(length, width, height) {
